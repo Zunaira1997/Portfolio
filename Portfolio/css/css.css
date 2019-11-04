@@ -1,0 +1,231 @@
+
+*{
+
+  margin:0; 
+
+  padding:0; 
+
+}
+
+/* ==========================
+        BODY
+============================= */
+body{
+background-color: white; height: 90vh; 
+  background-image: url(img_banner.jpg); background-size: cover; 
+  background-position: 20% 10%; background-blend-mode: multiply;
+font-family: 'Karla',"Calibri","Corbel", sans-serif;
+
+}
+html{
+
+scroll-behavior: smooth;
+box-sizing: border-box;
+
+}
+
+
+
+
+
+/* thi is the code for CV Page*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~
+          CV - Page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.mainWrapper{
+  padding: 40px;
+  background-color :#fff;
+}
+main{
+  background-color: #28C7FC;
+}
+header{
+  width: 100%;
+  min-height: 400px;
+  background-image: linear-gradient(to left bottom, #333,#000 80%);
+  color: #fff;
+  display: flex;
+  flex-direction: portfolio;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+header a{
+  color: #fff;
+}
+header>.profileImage{
+  display: block;
+  max-width: 155px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+/*Digital CV code inspired by https://codepen.io/rljaiswal/pen/axJZxJ*/
+
+.cv_main{
+  padding: 40px;
+  background-color :#fff;
+}
+
+.cv_main h2{
+  padding: 3% 0% 0 0%;
+  background-position: center;
+  background-size: cover;
+  background-color: #333;
+  font-family: 'Karla',"Calibri","Corbel", sans-serif;
+  color: #fcf6f8;
+  font-size: 20px;
+  border-bottom: solid 1.5px #cc0055;
+  }
+  .label {
+  width: 100%;
+  min-height: 400px;
+  background-image: linear-gradient(to left bottom, #333,#000 80%);
+  color: #fff;
+  display: flex;
+  flex-direction: portfolio;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Karla',"Calibri","Corbel", sans-serif;
+}
+.label a{
+  color: #fff;
+}
+.label>.cvImage{
+  display: block;
+  max-width: 155px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  
+}
+.label>.cvh1{
+  font-size: 2rem;
+  font-family: 'Karla',"Calibri","Corbel", sans-serif;
+  margin-bottom: 10px;
+}
+.label>.cvh2{
+  font-size: 1rem;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  padding: 20px; 
+  margin-bottom: -2%;
+}
+.summary p{
+  padding-left: 20px;
+  margin: 2% 9% 2% 9%;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.contactInfo, .education, .skills{
+  padding-left: 20px;
+}
+.info{
+  display: flex;
+}
+.info .infoLabel,.info .labelValue{
+  width: 20%;
+}
+.info .infoLabel{
+  font-size: 16px;
+  font-weight: 600;
+}
+.skillWrapper{
+  width: 0%;
+}
+.skillWrapper>span{
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+}
+.skillWrapper>span::before, .skillWrapper>span::after{
+  content: '';
+  position: absolute;
+}
+.skillWrapper>span::before{
+  width: 10px;
+  height: 10px;
+  border: 3px double #ccc;
+  border-radius: 50%;
+  left: -15px;
+  top: 15px;
+}
+/* ==========================
+          EXPeRIANCE
+============================= */
+.experience{
+ 
+margin: 2% 0% 1% 0%;
+}
+  .experience_container {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 20px;
+  }
+ 
+  .experience_container h4{
+    margin: 0 5% 0 30%;
+    padding-bottom: 10px;
+    font-weight: 800;
+  }
+    .experience_container img{
+    height: 200px;
+    width: 300px;
+    margin: 0 0 0 39%;
+    }
+    .experience_container p{
+    margin: 0 20% 0 30%;
+    }
+/* ==========================
+          WORK HISTORY
+============================= */
+.work_history{
+ 
+  margin: 2% 0% 1% 0%;
+    background-position: ;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+     }
+    .work_history p{
+      margin: 0 20% 0 30%;
+      }
+      
+  .work_history h4{
+    margin: 1% 5% 0 30%;
+    padding-bottom: 10px;
+    font-weight: 800;
+  }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~
+      MEDIA SCREEN FOR CV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 800px) {
+
+  *{
+  margin:0; 
+  padding:0; 
+  }
+
+.label{
+  padding-left: 10px;
+  padding-right: 10px;
+  margin:0;
+  width: 98%;
+  }
+  .label>.cvImage{
+    padding-top: 0;
+    box-shadow: 0 0 10px #111111;
+    height:30%;
+    width:30%;
+    border-radius: 47%;
+    margin: 20px 0px 0px 20px;
+  }

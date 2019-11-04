@@ -11,9 +11,7 @@
         BODY
 ============================= */
 body{
-background-color: white; height: 90vh; 
-  background-image: url(img_banner.jpg); background-size: cover; 
-  background-position: 20% 10%; background-blend-mode: multiply;
+background-color: white;
 font-family: 'Karla',"Calibri","Corbel", sans-serif;
 
 }
@@ -29,109 +27,68 @@ box-sizing: border-box;
 /*Navigation inspiration from codepen, https://codepen.io/EvyatarDa/pen/waKXMd*/
 
 nav{
-
 position: relative;
-
 width: 100%;
-
-background-color: rgba(0, 0, 0, 0.589);
-
-padding-bottom: 0;
-
+height: 8%;
+background-color: rgba(0, 0, 0, 0.733);
+padding-bottom: 10px;
 }
 nav a{
-
 color: #9e9d9b;
-
+color: #cc0055;
 text-decoration: none;
-
-font: 100% ;
-
-font-weight: 900;
-
-margin: 0 0 auto 10px;
-
+font: 100%;
+font-weight: 500;
+font-size: 20px;
+margin: 0 0 auto 10px; 
 position: relative;
-
 cursor: pointer;
-
 }
 
 ul{
-
 background: transparent;
-
 text-align: center;
-
 }
 
 ul a{
-
 margin-left: 3px;
-
 margin-right: 3px;
-
 }
 
 li{
-
 height:0;
-
-padding-top: 10px;
-
+padding-top: 15px;
 display:inline-block;
-
 margin-left: 0.1%;
-
 }
 li a:before{
-
 position: absolute;
-
 opacity: 0.5;
-
 height: 80%;
-
 width: 2px;
-
 content: '';
-
 background: #9e9d9b;
-
-transition: all 0.9s;
-
+transition: all 0.8s;
 margin-left: -3px;
-
 margin-right: -3px;
-
 }
 li a:hover:before, 
-
 li a:hover:after{
-
 opacity: 1;
-
 height: 2px;
-
 width: 100%;
-
 }
 /* ==========================
         BANNER
 ============================= */
-.index_banner{
-
-background-image:linear-gradient(rgba(41, 39, 39, 0.5),rgba(54, 52, 52, 0.5));
-
+.banner{
+background-image: linear-gradient(to left bottom, #333,#000 80%);
 padding-top: 15%;
-
 background-size: cover;
-
 background-attachment: fixed;
-
-height: 50vh;
-
+height: 45vh;
 }
+
 /* ==========================
         Arrow Animation
 ============================= */
@@ -161,12 +118,14 @@ transform: translateY(-15px);
 ============================= */
 
 h1{
-color: #c4c4c4;
+color: white;
 font-family: 'Karla',"Calibri","Corbel", sans-serif;
 text-align: center;
 margin:0 3% 0 3%;
 font-size: 250%;
-border: double 10px#cc0055;
+border: double 6px#cc0055;
+border-radius: 20px;
+
 }
 h2{
 padding: 5% 8% 0 10%;
@@ -179,13 +138,10 @@ border-bottom: solid 1px #111111;
 text-align: center;
 }
 h3{
-background-color: white;
 font-family: 'Karla',"Calibri","Corbel", sans-serif;
-color: black;
-font-size: 20px;
-font-weight: bold;
-border-bottom: solid 1px #111111;
-border-top: solid 1px #111111;
+color: white;
+font-size: 30px;
+font-weight: 500;
 text-align: center;
 }
 /* ==========================
@@ -197,41 +153,130 @@ padding: 5% 2% 5% 2%;
 }
 
 .introduction{
-padding-top: 0px;
+padding-bottom: 15px;
 text-align: center;
 color: #111111;
-width:100%;
+width:88%;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 border-radius: 20px;
+margin:5% auto;
+
 }
 
 .introduction img{
 padding-top: 0;
 box-shadow: 0 0 10px #111111;
-height: auto;
-width:20%;
+height:90px;
+width:26%;
+border-radius: 47%;
+margin: 15px 0px 0px 15px;
+
 }
 .introduction p{
-text-align: left;
+text-align: center;
 font-size: 100%;
-font-weight: 900;
+font-weight: 500;
 color: #111111;
 font-family: 'Karla',"Calibri","Corbel", sans-serif;
 padding: 1% 3%;
 max-width: 65ch;
-margin:0 auto;
+margin:0% auto;
 }
 /* ==========================
         PORTFOLIO
 ============================= */
+.portfolio {
+  float: left;
+  float: center;
+  width: 22%;
+  background-color: #111111;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.portfolio_heading h2{
+  padding: 2% 1% 1% 1%;
+  background-color: #111111;
+  font-family: 'Karla',"Calibri","Corbel", sans-serif;
+  color: #fffefe;
+  font-size: 25px;
+  font-weight: bold;
+  border-bottom: solid 1px #cc0055;
+  }
+.portfolio_container {margin: auto;  background-color: #111111;}
 
-.portfolio_container{
+.portfolio_container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.portfolio img{
+  height: 25%;
+  width:50%;
+  border-radius: 35%;
+  padding-top: 0;
+box-shadow: 0 0 3px #111111;
+background-color: black;
+margin-bottom: 10px;
+  }
+  .portfolio h3{
+    font-family: 'Karla',"Calibri","Corbel", sans-serif;
+  color: #cc0055;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom:3%;
+  }
+  .portfolio p{
+    text-align: left;
+    margin: 0% 15% 0% 15%;
+    padding-bottom: 5%;
+    max-width: 50ch;
+    font-size: 100%;
+    font-weight: 500;
+    color: #111111;
+    font-family: 'Karla',"Calibri","Corbel", sans-serif;
+    }
+    
+/* Responsive*/
+@media screen and (max-width: 900px) {
+  .portfolio {
+    width: 80%;
+    margin-left: 30px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .portfolio img{
+    height: 25%;
+    width:35%;
+    margin-bottom: 10px;
+    }
+  
+}
+
+/* Style the counter portfolio-cards */
+.portfolio-card {
+  background-color: white;
+text-align: center;
+color: #cc0055;
+padding-top:20px;
+height: 525px;
+max-width:100%;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius: 20px;
+
+}
+/* ==========================
+        GALLERY
+============================= */
+
+.Gallery_container{
 background: #111111;
 padding: 1% 2% 5% 10%;
 }
 
-.portfolio_heading h2{
-padding: 5% 8% 0 10%;
+.Gallery_heading h2{
+padding: 2% 1% 1% 1%;
 background-color: #111111;
 font-family: 'Karla',"Calibri","Corbel", sans-serif;
 color: #fffefe;
@@ -240,7 +285,7 @@ font-weight: bold;
 border-bottom: solid 1px #cc0055;
 }
 
-.portfolio_container h3{
+.Gallery_container h3{
   font-family: 'Karla',"Calibri","Corbel", sans-serif;
 color: #cc0055;
 font-size: 20px;
@@ -248,23 +293,23 @@ font-weight: bold;
 text-align: left;
 background: #111111;
 }
-.portfolio_container img{
+.Gallery_container img{
 box-shadow: 0 0 10px #cc00551c;  
 height: 31%;
 width:61%;
 }
-.portfolio1{
+.Gallery1{
 padding: 5% 2% 2% 5%;
 color: white;
 }
-.portfolio_container .button{
+.Gallery_container .button{
 margin-left: 15%;
 }
-.portfolio2{
+.Gallery2{
 padding: 5% 2% 2% 5%;
 color: white;
 }
-.portfolio_container p{
+.Gallery_container p{
 padding-top: 0;
 margin-top: 5%;
 margin-right: 25%;
@@ -508,7 +553,7 @@ right: 0;
 }
 
 @media screen and (min-width: 700px){
-.portfolios .button{
+.Gallerys .button{
   margin-left: 25%;
 }
 
@@ -546,6 +591,7 @@ position: fixed;
 width: 100%;
 background-color: rgba(0, 0, 0, 0.438);
 padding-bottom: 0;
+
 }
 nav a{
 color: #cc0055;
@@ -564,9 +610,8 @@ padding-bottom: 30px;
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~
            Banner
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.index_banner{
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-url(img/banner1.jpg);
+.banner{
+  background-image: linear-gradient(to left bottom,#333,#000 60%);
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~
         Arrow Animation
@@ -585,20 +630,21 @@ margin:0 32% 0 32%;
             Intro
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .introduction{
-padding-left: 10px;
+padding-left: 0px;
 padding-right: 10px;
-margin:0;
-width: 98%;
+margin: 3% auto ;
+width: 88%;
 }
 .introduction img{
-height: 220px;
-  border-radius: 50%;
-width:253px;
+height: 215px;
+  border-radius: 47%;
+width:245px;
+margin: 20px 0px 0px 20px;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~
-        Portfolio
+        Gallery
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.portfolio_container{
+.Gallery_container{
 display:grid;  
 margin: 0;
 grid-template-columns: repeat(2, 6fr);
@@ -606,28 +652,28 @@ grid-template-rows:700px ;
 grid-gap: 5px;
 padding:0;
 }
-.portfolio_container img{
+.Gallery_container img{
 height: 250px;
 width:250px;
 }
-.portfolio1{
-grid-row: 1;
-grid-column: 1;
+.Gallery1{
+grid-Gallery_container: 1;
+grid-Gallery: 1;
 padding:0;
 margin-left: 33%;
 margin-top: 5%;
 }
-.portfolio_container .button{
+.Gallery_container .button{
 align-content: center;
 }
-.portfolio2{
-grid-row: 1;
-grid-column: 2;
+.Gallery2{
+grid-portfolio_container: 1;
+grid-portfolio: 2;
 padding:0;
 margin-left: 20%;
 margin-top: 5%;
 }
-.portfolio_container p{
+.Gallery_container p{
 max-width: 32ch;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -662,8 +708,8 @@ margin-right: 20%;
 padding-top:5%;
 margin-left: 6%;
 width:90%;
-grid-row: 1;
-grid-column: 1;
+grid-portfolio_container: 1;
+grid-portfolio: 1;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -673,8 +719,8 @@ grid-column: 1;
 padding-top:5%;
 margin-left: 5%;
 width:90%;
-grid-row: 1;
-grid-column: 2;
+grid-portfolio_container: 1;
+grid-portfolio: 2;
 }
 .blog2 .button{
 margin-top: 5%;
@@ -686,8 +732,8 @@ margin-top: 5%;
 margin: 2% 2% 0 2%;
 padding-top:1%;
 width:96%;
-grid-row: 2;
-grid-column: 1 /span 2;
+grid-portfolio_container: 2;
+grid-portfolio: 1 /span 2;
 }
 .blog3 img{
 margin-top: 1%;
@@ -734,12 +780,14 @@ footer p{
   button[type="submit"]{
   margin: 2% 20% 1% 45%;
   }
+ 
+}
 
 
 /* thi is the code for CV Page*/
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/* ============================
           CV - Page
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+=============================== */
 /*Digital CV code inspired by https://codepen.io/rljaiswal/pen/axJZxJ*/
 
 .cv_main{
@@ -757,40 +805,42 @@ footer p{
   font-size: 20px;
   border-bottom: solid 1.5px #cc0055;
   }
-header{
-  width: 100%;
+                                                                       /* CV Header*/
+  label {
+  width: auto;
   min-height: 400px;
   background-image: linear-gradient(to left bottom, #333,#000 80%);
   color: #fff;
   display: flex;
-  flex-direction: column;
+  flex-direction: portfolio;
   align-items: center;
   justify-content: center;
-  font-family: 'Karla',"Calibri","Corbel", sans-serif;
+  font-family: 'Karla',"Calibri","Corbel", sans-serif; 
 }
-header a{
+label a{
   color: #fff;
 }
-header>.cvImage{
-  display: block;
+label>.cvImage{
+  display: inline-block;
   max-width: 144px;
-  border-radius: 50%;
-  margin-right: -20px;
-  
+  height: 115px;
+  border-radius: 47%;
+margin: center;  
 }
-header>.cvh1{
-  font-size: 2rem;
+label>.cvh1{
+  font-size: 2.5rem;
   font-family: 'Karla',"Calibri","Corbel", sans-serif;
   margin-bottom: 10px;
 }
-header>.cvh2{
+label>.cvh2{
   font-size: 1rem;
   font-weight: 200;
   margin-bottom: 10px;
 }
+                                                                            /* CV Content*/
 .content{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr  ;
   grid-gap: 15px;
   padding: 20px; 
   margin-bottom: -2%;
@@ -816,6 +866,7 @@ header>.cvh2{
   font-size: 16px;
   font-weight: 600;
 }
+                                                                                /* SKILLS*/
 .skillWrapper{
   width: 0%;
 }
@@ -851,17 +902,17 @@ margin: 2% 0% 1% 0%;
   }
  
   .experience_container h4{
-    margin: 0 5% 0 30%;
+    margin: 0 5% 0 20%;
     padding-bottom: 10px;
     font-weight: 800;
   }
-    .experience_container img{
-    height: 200px;
-    width: 300px;
-    margin: 0 0 0 39%;
+  .experience_container img{
+    height: 110px;
+    width: 50%;
+    margin: 0 5% 0 20%;
     }
     .experience_container p{
-    margin: 0 20% 0 30%;
+    margin: 0 10% 0 10%;
     }
 /* ==========================
           WORK HISTORY
@@ -876,12 +927,13 @@ margin: 2% 0% 1% 0%;
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
      }
-    .work_history p{
-      margin: 0 20% 0 30%;
-      }
+    
+      .work_history p{
+        margin: 0 10% 0 10%;
+        }
       
   .work_history h4{
-    margin: 1% 5% 0 30%;
+    margin: 1% 1% 0 10%;
     padding-bottom: 10px;
     font-weight: 800;
   }
@@ -889,21 +941,51 @@ margin: 2% 0% 1% 0%;
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~
       MEDIA SCREEN FOR CV
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px){
+ /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+          Medis Screen for CV-page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.label{
+  margin-top: 40px;
+display: flex;
+max-width: 200px;
+width: 40%;
+  }
+  label>.cvImage{
+    display: inline-block;
+    max-width: 144px;
+    height: 115px;
+    border-radius: 47%;
+  margin: center; }
+  .contactInfo, .education, .skills{
+    padding-left: 20px;
 
-  *{
-  margin:0; 
-  padding:0; 
   }
-
-.header{
-  padding-left: 10px;
-  padding-right: 10px;
-  margin:0;
-  width: 98%;
+  .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    padding: 20px; 
+    margin-bottom: -2%;
   }
-  header>.cvImage{
-  height: 120px;
-    border-radius: 50%;
-  width:253px;
+  
+  .experience_container img{
+    height: 200px;
+    width: 300px;
+    margin: 0 0 0 20%;
+    }
+    .experience_container p{
+    margin: 0 20% 0 20%;
+    }
+    .work_history p{
+      margin: 0 10% 0 20%;
+      }
+      .work_history h4{
+        margin: 1% 8% 0 20%;
+        padding-bottom: 10px;
+        font-weight: 800;
+      }
+    
+  
   }
+  
