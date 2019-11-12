@@ -78,8 +78,11 @@ width: 100%;
         BANNER
 ============================= */
 .banner{
-background-image: linear-gradient(to left bottom, #333,#000 80%);
+  background-color: #701139;
+  background-blend-mode: multiply;
+background-image: url(../img/banner.jpg);
 padding-top: 15%;
+background-position: center;
 background-size: cover;
 background-attachment: fixed;
 height: 45vh;
@@ -149,7 +152,8 @@ padding: 5% 2% 5% 2%;
 }
 
 .introduction{
-padding-bottom: 15px;
+padding-bottom: 3%;
+padding-top: 2%;
 text-align: center;
 color: #111111;
 width:88%;
@@ -326,6 +330,9 @@ width:150px;
   padding: 3% 0% 2% 0%;
   color: #111111;
   }
+  .reference{
+  background-color: rgba(131, 129, 129, 0.801);
+    }
   .attribution {
     font-family: 'Karla', sans-serif;
     color: gray;
@@ -449,7 +456,7 @@ transition: 0.5s;
 padding-right: 25px;
 }
 .button:hover a:after{
-opacity: ;
+opacity: 1;
 right: 0;
 }
 /* ==========================
@@ -540,7 +547,6 @@ padding-bottom: 0;
 nav a{
 color: #f3f0f2;
 text-decoration: none;
-padding:  0 5%;
 font-size: 20px;
 
 }
@@ -561,9 +567,9 @@ li a:before{
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~
            Banner
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.banner{
+/* .banner{
   background-image: linear-gradient(to left bottom,#333,#000 60%);
-}
+} */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~
         Arrow Animation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -695,7 +701,7 @@ footer p{
 }
 
 .cv_main h2{
-  padding: 2% 0% 1% 0%;
+  padding: 1% 0% 1% 0%;
   background-position: center;
   background-size: cover;
   background-color: #333;
@@ -704,10 +710,6 @@ footer p{
   font-size: 20px;
   border-bottom: solid 1.5px #cc0055;
   margin-bottom: 15px;
-  }
-  .cv_main em{
-    font-family:  'Bad Script', cursive; 
-    font-size: 25px;
   }
  /* CV Header*/
   .top {
